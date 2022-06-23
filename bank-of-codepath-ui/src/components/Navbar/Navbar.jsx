@@ -17,19 +17,19 @@ export default function Navbar({filterInputValue, setFilterInputValue}) {
       </a> 
 
       <div className= "search">
-        <FilterInput inputValue= {filterInputValue}  handleOnChange= {handleOnInputChange} />
+        <FilterInput inputValue= {filterInputValue} handleOnChange= {handleOnInputChange} />
       </div>
 
-      <div className="user">
-        <div className="notifications">
-          <i className="material-icons md-36">notifications</i>
-          <div className="green-dot" />
+      <div className= "user">
+        <div className= "notifications">
+          <i className= "material-icons md-36"> notifications </i>
+          <div className= "green-dot" />
         </div>
-        <div className="avatar">
-          <img src={avatar} alt="avatar" />
-          <div className="info">
-            <p>Person McPerson</p>
-            <span>ID: 12345567</span>
+        <div className= "avatar">
+          <img src={avatar} alt= "avatar" />
+          <div className= "info">
+            <p> Person McPerson </p>
+            <span> ID: 12345567 </span>
           </div>
         </div>
       </div>

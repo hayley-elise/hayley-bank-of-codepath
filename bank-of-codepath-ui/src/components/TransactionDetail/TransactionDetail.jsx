@@ -10,11 +10,11 @@ export default function TransactionDetail() {
   )
 }
 
-export function TransactionCard({ transaction = {}, transactionId = null }) {
+export function TransactionCard({transactions= {}, transactionId= null}) {
   return (
     <div className="transaction-card card">
       <div className="card-header">
-        <h3>Transaction #{transactionId}</h3>
+        <h3> Transaction # {transactionId}</h3>
         <p className="category"></p>
       </div>
 
@@ -23,8 +23,8 @@ export function TransactionCard({ transaction = {}, transactionId = null }) {
       </div>
 
       <div className="card-footer">
-        <p className={`amount ${transaction.amount < 0 ? "minus" : ""}`}>{formatAmount(transaction.amount)}</p>
-        <p className="date">{formatDate(transaction.postedAt)}</p>
+        <p className={`amount ${transactions.amount < 0 ? "minus" : ""}`}>{formatAmount(transactions.amount)}</p>
+        <p className="date">{formatDate(transactions.postedAt)}</p>
       </div>
     </div>
   )
